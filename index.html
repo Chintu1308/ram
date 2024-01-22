@@ -109,9 +109,10 @@
             <a href="#">Jai Sri Ram</a>
         </div>
         <div>
-            <span style="margin-right: 20px;">Live</span>
-            <span style="margin-right: 20px;">Updates</span>
-            <span>About&</span>
+            <a href="https://www.youtube.com/live/Yq0i3Vclhhs?si=az5DpeXSEKCTFOFh"><span style="margin-right: 20px;">Live</span></a>
+            <a href="https://www.thehindu.com/news/national/ram-temple-mandir-ayodhya-consecration-ceremony-modi-january-22-2024/article67761881.ece">
+span style="margin-right: 20px;">Updates</span></a>
+            <a herf="https://en.m.wikipedia.org/wiki/Ram_Mandir"><span>About&</span></a>
         </div>
     </div>
 
@@ -120,11 +121,25 @@
     </div>
 
     <div id="scroll-buttons">
-        <button class="scroll-button" onclick="scrollToSection('section1')">Live</button>
-        <button class="scroll-button" onclick="scrollToSection('section2')">News</button>
-        <button class="scroll-button" onclick="scrollToSection('section3')">About
-        </button>
+        <button class="scroll-button" onclick="redirectToYouTubeLive()">Live</button>
+
+<button class="scroll-button" onclick="redirectToNews()">News</button>
+<button class="scroll-button" onclick="redirectToAbout()">About</button>
+
     </div>
+<script>
+  function redirectToYouTubeLive() {
+    window.location.href = 'https://www.youtube.com/live/Yq0i3Vclhhs?si=az5DpeXSEKCTFOFh';
+  }
+
+function redirectToNews() {
+    window.location.href = 'https://www.thehindu.com/news/national/ram-temple-mandir-ayodhya-consecration-ceremony-modi-january-22-2024/article67761881.ece';
+  }
+
+  function redirectToAbout() {
+    window.location.href = 'https://en.m.wikipedia.org/wiki/Ram_Mandir';
+  }
+</script>
 
     <div id="section1">
         <!-- Your content for Section 1 goes here -->
@@ -139,7 +154,7 @@
     </div>
 
     <div id="section3">
-        <!-- Your content for Section 3 goes here -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/peLDM8vVass?si=jyX403Iq_CLGEeqK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
     <script>
